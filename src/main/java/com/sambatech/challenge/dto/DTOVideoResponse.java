@@ -1,9 +1,13 @@
 package com.sambatech.challenge.dto;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class DTOVideoResponse {
 
+	@ApiModelProperty(value = "Time duration of video")
 	private double duration;
 
+	@ApiModelProperty(value = "Time video was added")
 	private long timestamp;
 
 	public DTOVideoResponse(double duration, long timestamp) {
